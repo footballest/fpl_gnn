@@ -1,0 +1,15 @@
+# Core numerical libraries
+pandas>=2.0
+numpy>=1.24
+
+# PyTorch and Graph Neural Network libraries
+torch>=2.0
+torch_geometric>=2.4
+
+# Data loading and API interaction
+requests>=2.31
+
+# Optional utilities for graphs and visualizations
+networkx>=3.0
+matplotlib>=3.7
+scikit-learn>=1.3

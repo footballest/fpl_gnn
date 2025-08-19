@@ -1,3 +1,7 @@
+![CI](https://github.com/footballest/fpl_gnn/actions/workflows/ci.yml/badge.svg)
+![Python](https://img.shields.io/badge/Python-3.10%20|%203.11-blue)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
 # Graph Neural Network for FPL Score Prediction
 
 This repository contains code to build a **graph neural network** (GNN) that predicts Fantasy Premier League (FPL) player scores for upcoming gameweeks.  Instead of treating players in isolation, the model represents each gameweek as a graph where **players are nodes and edges represent relationships** (teammate and opponent connections).  This design is inspired by football analytics research which argues that a player's output is influenced by both their own form and the interactions with teammates and opponents【781651944176581†L391-L398】.  The project uses a **Graph Attention Network (GAT)** implemented with PyTorch Geometric to learn which connections are most influential on a player’s expected points【127110137942256†L474-L490】.

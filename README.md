@@ -10,7 +10,7 @@ This repository contains code to build a **graph neural network** (GNN) that pre
 
 We rely on publicly available FPL data.  There are two common ways to obtain historical gameweek statistics:
 
-* **Vaastav’s Fantasy‑Premier‑League dataset** – An open‑source GitHub repository that compiles CSV files for each season.  The data directory is organized by season; for example, `season/gws/gw_number.csv` contains game‑week‑specific stats and `season/gws/merged_gws.csv` merges all gameweeks for that season【781651944176581†L391-L398】.  Because weekly updates stopped after the 2024–25 season, the repository now publishes three updates per season (start of season, post‑January window and end of season).  Nevertheless, it provides complete historical data that can be read directly in Python via `pandas.read_csv` using raw GitHub URLs.
+* **Vaastav’s Fantasy‑Premier‑League dataset** – An open‑source GitHub repository that compiles CSV files for each season.  The data directory is organized by season; for example, `season/gws/gw_number.csv` contains game‑week‑specific stats and `season/gws/merged_gws.csv` merges all gameweeks for that season.  Because weekly updates stopped after the 2024–25 season, the repository now publishes three updates per season (start of season, post‑January window and end of season).  Nevertheless, it provides complete historical data that can be read directly in Python via `pandas.read_csv` using raw GitHub URLs.
 
 * **Official FPL API** – The official game exposes several JSON endpoints.  Unofficial libraries such as [`fpl-api`](https://github.com/jeppe-smith/fpl-api) wrap these endpoints and provide typed functions:
   * `fetchBootstrap()` returns general information on players, teams and gameweeks.

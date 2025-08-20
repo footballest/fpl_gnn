@@ -61,7 +61,7 @@ fpl-gnn-project/
 
 ## Model overview
 
-The model defined in `src/model.py` uses two **Graph Attention Network** layers.  The first GAT layer has multiple attention heads to learn different aspects of player interactions, and the second layer outputs a single regression value per node (player).  PyTorch Geometric provides the `GATConv` layer, which implements the attention mechanism described in the original paper【127110137942256†L474-L490】.  During training we minimize mean squared error between predicted and actual FPL points.
+The model defined in `src/model.py` uses two **Graph Attention Network** layers.  The first GAT layer has multiple attention heads to learn different aspects of player interactions, and the second layer outputs a single regression value per node (player).  PyTorch Geometric provides the `GATConv` layer, which implements the attention mechanism described in the original paper.  During training we minimize mean squared error between predicted and actual FPL points.
 
 ## Future work
 
